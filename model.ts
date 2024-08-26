@@ -38,7 +38,11 @@ const dataSchema = new mongoose.Schema({
     type: Boolean,
     required: true,
   },
-  isAddedToCart: {
+  isAddedToCartFromHome: {
+    type: Boolean,
+    required: true,
+  },
+  isAddedToCartFromProduct: {
     type: Boolean,
     required: true,
   },

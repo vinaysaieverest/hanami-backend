@@ -67,9 +67,9 @@ function connection() {
         });
     });
 }
-function insertData() {
+function insert() {
     return __awaiter(this, void 0, void 0, function () {
-        var err_2;
+        var e_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -79,9 +79,8 @@ function insertData() {
                     _a.sent();
                     return [3 /*break*/, 3];
                 case 2:
-                    err_2 = _a.sent();
-                    console.log(err_2);
-                    1;
+                    e_1 = _a.sent();
+                    console.log(e_1);
                     return [3 /*break*/, 3];
                 case 3: return [2 /*return*/];
             }
@@ -102,7 +101,7 @@ var queries = function () { return __awaiter(_this, void 0, void 0, function () 
 // function start() {
 // }
 connection();
-insertData();
+insert();
 queries();
 var PORT = process.env.PORT || 5001;
 app.listen(PORT, function () {

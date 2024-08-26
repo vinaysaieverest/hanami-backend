@@ -20,7 +20,14 @@ async function connection() {
         console.error("Error connecting to the database", err);
     }
 }
-
+async function insert(){
+    try{
+        await Data.insertMany(data)
+    }
+    catch(e){
+        console.log(e)
+    }
+}
 
 const queries = async () => {
     try {
@@ -36,7 +43,7 @@ const queries = async () => {
 
 // }
 connection();
-
+insert()
 queries();
 
 const PORT = process.env.PORT || 5001;
